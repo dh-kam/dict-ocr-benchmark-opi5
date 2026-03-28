@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # HuggingFace에서 Qwen2.5-VL 모델 다운로드 스크립트
-# 사용법: export HF_API_KEY="your_token_here" && ./scripts/download_models.sh
+# 사용법: export HF_API_KEY="your_token_here" && ./scripts/2_download_models.sh
 #
 
 set -e
@@ -114,5 +114,5 @@ echo "다운로드된 파일:"
 ls -lh "$MODELS_DIR"/*.gguf 2>/dev/null || echo "  (GGUF 파일 없음)"
 echo
 echo "모델이 준비되었습니다. 다음을 실행하세요:"
-echo "  python3 extract_vocab_final.py"
+echo "  python3 5_extract_vocab_final.py"
 echo
